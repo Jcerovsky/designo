@@ -19,7 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ContextProvider>
-        <body className={`${jost.className} content-box`}>{children}</body>
+        <body
+          className={`${jost.className} content-box max-w-[72.375rem] ml-auto mr-auto`}
+        >
+          {children}
+        </body>
       </ContextProvider>
     </html>
   );

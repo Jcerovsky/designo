@@ -3,13 +3,17 @@ import React from "react";
 function MainCard() {
   return (
     <section
-      className="bg-peach text-white p-10 pb-[28rem] text-center relative overflow-hidden"
+      className="bg-peach text-white text-center overflow-hidden bg-no-repeat custom-img-bg-main md:m-6 md:rounded-xl
+      "
       style={{
-        backgroundImage: "url(/assets/home/desktop/bg-pattern-hero-home.svg)",
-        backgroundRepeat: "no-repeat",
+        backgroundImage:
+          "url(/assets/home/desktop/bg-pattern-hero-home.svg), url(/assets/home/desktop/image-hero-phone.png)",
       }}
     >
-      <div>
+      <div
+        className="max-w-[31.25rem] md:flex md:flex-col justify-center items-center p-10 pb-[28rem]
+      desktop:pb-[10rem] max-desktop:ml-auto max-desktop:mr-auto "
+      >
         <h1 className="text-4xl mt-2">
           Award-winning custom designs and digital branding solutions
         </h1>
@@ -24,11 +28,6 @@ function MainCard() {
         >
           LEARN MORE
         </a>
-        <img
-          src="/assets/home/desktop/image-hero-phone.png"
-          alt="phone-frame"
-          className="absolute top-[18rem] left-1/2 transform -translate-x-1/2"
-        />
       </div>
     </section>
   );

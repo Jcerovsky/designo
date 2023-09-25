@@ -14,9 +14,9 @@ function Header() {
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setIsSmallerScreen(window.innerWidth <= 767);
+      setIsSmallerScreen(window.innerWidth <= 747);
       const handleResize = () => {
-        setIsSmallerScreen(window.innerWidth <= 767);
+        setIsSmallerScreen(window.innerWidth <= 747);
       };
       window.addEventListener("resize", handleResize);
 
