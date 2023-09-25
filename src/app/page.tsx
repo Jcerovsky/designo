@@ -1,6 +1,11 @@
+import Header from "@/app/components/Header";
+import MainCard from "@/app/components/MainCard";
 
 export default function Home() {
   return (
-    <h1 className='text-2xl'>test</h1>
-  )
+    <>
+      <Header />
+      <MainCard />
+    </>
+  );
 }

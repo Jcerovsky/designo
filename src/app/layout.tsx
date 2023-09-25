@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Jost } from "next/font/google";
 import React from "react";
+import ContextProvider from "@/app/context/Context";
 
 const jost = Jost({ weight: ["200", "500", "700", "900"], subsets: ["latin"] });
 
@@ -17,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={jost.className}>{children}</body>
+      <ContextProvider>
+        <body className={`${jost.className} content-box`}>{children}</body>
+      </ContextProvider>
     </html>
   );
 }
