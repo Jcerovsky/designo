@@ -4,6 +4,7 @@ import { Jost } from "next/font/google";
 import React from "react";
 import ContextProvider from "@/app/context/Context";
 import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 const jost = Jost({ weight: ["200", "500", "700", "900"], subsets: ["latin"] });
 
