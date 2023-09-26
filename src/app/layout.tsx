@@ -21,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ContextProvider>
-        <body
-          className={`${jost.className} content-box max-w-[72.375rem] ml-auto mr-auto`}
-        >
+        <body className={`${jost.className} content-box ml-auto mr-auto`}>
           <Header />
           {children}
           <Footer />

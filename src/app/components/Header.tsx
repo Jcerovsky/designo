@@ -25,7 +25,7 @@ function Header() {
   }, []);
 
   return (
-    <header className="">
+    <header className="px-6 ">
       <div className="flex items-center px-6 py-12">
         <img
           src={`/assets/shared/desktop/logo-${

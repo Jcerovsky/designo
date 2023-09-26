@@ -20,6 +20,7 @@ const config: Config = {
       },
       colors: {
         peach: "#e88069",
+        "light-peach": "#ffac99",
       },
     },
   },
