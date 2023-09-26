@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <MainHeroCard />
-      <section className="m-5 mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8 ">
+      <section className="m-5 mb-[7rem] mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8 ">
         <Card
           imgSource={"/image-web-design.jpg"}
           heading={"WEB DESIGN"}
@@ -18,7 +18,7 @@ export default function Home() {
           heading={"GRAPHIC DESIGN"}
         />
       </section>
-      <section className="flex flex-col gap-10 m-5">
+      <section className="flex flex-col gap-[5rem] m-5">
         <Features
           imgSource={"passionate"}
           heading={"PASSIONATE"}
