@@ -1,11 +1,12 @@
 import MainHeroCard from "@/app/components/MainHeroCard";
 import Card from "@/app/components/Card";
+import Features from "@/app/components/Features";
 
 export default function Home() {
   return (
     <>
       <MainHeroCard />
-      <div className="m-5 mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 ">
+      <section className="m-5 mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8 ">
         <Card
           imgSource={"/image-web-design.jpg"}
           heading={"WEB DESIGN"}
@@ -16,7 +17,33 @@ export default function Home() {
           imgSource={"/image-graphic-design.jpg"}
           heading={"GRAPHIC DESIGN"}
         />
-      </div>
+      </section>
+      <section className="flex flex-col gap-10 m-5">
+        <Features
+          imgSource={"passionate"}
+          heading={"PASSIONATE"}
+          text={
+            "Each project starts with an in-depth brand research to ensure we only create products that serve a purpose." +
+            " We merge art, design, and technology into exciting new solutions."
+          }
+        />
+        <Features
+          imgSource={"resourceful"}
+          heading={"RESOURCEFUL"}
+          text={
+            "Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value " +
+            "customer collaboration. It guarantees superior results that fulfill our clients’ needs."
+          }
+        />
+        <Features
+          imgSource={"friendly"}
+          heading={"FRIENDLY"}
+          text={
+            "We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers," +
+            " and we strive to give them the best experience a company can provide."
+          }
+        />
+      </section>
     </>
   );
 }
