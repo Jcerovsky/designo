@@ -1,6 +1,6 @@
 import React from "react";
 
-function MainCard() {
+function MainHeroCard() {
   return (
     <section
       className="bg-peach text-white text-center overflow-hidden bg-no-repeat custom-img-bg-main md:m-6 md:rounded-xl
@@ -33,4 +33,4 @@ function MainCard() {
   );
 }
 
-export default MainCard;
+export default MainHeroCard;
