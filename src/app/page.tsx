@@ -4,7 +4,7 @@ import Features from "@/app/components/Features";
 
 export default function Home() {
   return (
-    <div className="sm:px-6 ">
+    <div>
       <MainHeroCard />
       <section className=" mb-[7rem] mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8  ">
         <Card

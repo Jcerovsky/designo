@@ -2,11 +2,19 @@
 
 import React, { useContext } from "react";
 import { Context } from "@/app/context/Context";
+import { usePathname } from "next/navigation";
 
 function Footer() {
+  const path = usePathname();
+  const isContactPage = path.endsWith("/contact");
+
   const { theme } = useContext(Context)!;
   return (
-    <footer className="text-center relative bg-neutral-900 pt-[15rem] pb-[4.5rem] desktop:pb-[2rem]	">
+    <footer
+      className={`text-center relative bg-neutral-900 ${
+        !isContactPage ? "pt-[15rem]" : "pt-10"
+      } pb-[4.5rem] desktop:pb-[2rem]	`}
+    >
       <div className="desktop:flex items-center desktop:border-b border-gray-800 desktop:mx-5 desktop:pb-8">
         <img
           src={`/assets/shared/desktop/logo-${
@@ -80,31 +88,33 @@ function Footer() {
             className="cursor-pointer hover:opacity-80"
           />
         </div>
-        <div
-          className="m-5 absolute text-white bg-peach py-[3.65rem] px-[2.625rem] rounded-xl top-[-18%] desktop:flex justify-between
+        {!isContactPage && (
+          <div
+            className="m-5 absolute text-white bg-peach py-[3.65rem] px-[2.625rem] rounded-xl top-[-18%] desktop:flex justify-between
         items-center gap-[10rem] desktop:p-[4rem] min-w-[18.56rem] max-h-[25rem]"
-          style={{
-            backgroundImage:
-              'url("/assets/shared/desktop/bg-pattern-call-to-action.svg")',
-          }}
-        >
-          <div>
-            <h2 className="text-3xl sm:text-4xl mb-4 mx-[15%] md:mx-[20%] tracking-wide desktop:text-left desktop:ml-0">
-              Let’s talk about your project
-            </h2>
-            <p className="mb-8 sm:mx-10 desktop:text-left desktop:mx-0">
-              Ready to take it to the next level? Contact us today and find out
-              how our expertise can help your business grow.
-            </p>
-          </div>
-          <a
-            href="/contact"
-            className="inline-block py-4 px-6 bg-white rounded-xl text-black tracking-widest hover:bg-light-peach
-          hover:text-white  duration-200 cursor-pointer desktop:whitespace-nowrap	"
+            style={{
+              backgroundImage:
+                'url("/assets/shared/desktop/bg-pattern-call-to-action.svg")',
+            }}
           >
-            GET IN TOUCH
-          </a>
-        </div>
+            <div>
+              <h2 className="text-3xl sm:text-4xl mb-4 mx-[15%] md:mx-[20%] tracking-wide desktop:text-left desktop:ml-0">
+                Let’s talk about your project
+              </h2>
+              <p className="mb-8 sm:mx-10 desktop:text-left desktop:mx-0">
+                Ready to take it to the next level? Contact us today and find
+                out how our expertise can help your business grow.
+              </p>
+            </div>
+            <a
+              href="/contact"
+              className="inline-block py-4 px-6 bg-white rounded-xl text-black tracking-widest hover:bg-light-peach
+          hover:text-white  duration-200 cursor-pointer desktop:whitespace-nowrap	"
+            >
+              GET IN TOUCH
+            </a>
+          </div>
+        )}
       </div>
     </footer>
   );

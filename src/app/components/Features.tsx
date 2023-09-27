@@ -10,7 +10,7 @@ function Features({ imgSource, heading, text }: IProps) {
   return (
     <div
       className="flex flex-col text-center items-center sm:grid sm:grid-cols-[minmax(12.5rem,25%),1fr] sm:items-center sm:text-left sm:gap-2
-    desktop:flex-col desktop:flex sm:gap-10 desktop:text-center"
+    desktop:flex-col desktop:flex sm:gap-10 desktop:text-center mx-5"
     >
       <div
         className="flex-grow"

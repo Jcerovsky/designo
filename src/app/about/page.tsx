@@ -26,7 +26,7 @@ function Page() {
 
   return (
     <div className="sm:mx-5 pb-[15rem]">
-      <div className="desktop:flex flex-row-reverse desktop:mb-[5rem]">
+      <div className="desktop:flex flex-row-reverse sm:mb-[5rem]">
         <img
           src={`/assets/about/${screenSize}/image-about-hero.jpg?`}
           alt="about-img"
@@ -51,7 +51,7 @@ function Page() {
           </div>
         </div>
       </div>
-      <div className="desktop:flex desktop:mb-[5rem]">
+      <div className="desktop:flex sm:mb-[5rem]">
         <img
           src={`/assets/about/${screenSize}/image-world-class-talent.jpg`}
           alt="talent-img"
@@ -98,7 +98,7 @@ function Page() {
               'url("/assets/shared/desktop/bg-pattern-call-to-action.svg")',
           }}
           className="text-center bg-[#fdf4f2] py-[5rem] px-[3rem] text-neutral-800 sm:rounded-b-xl mb-[4rem]
-          desktop:rounded-l-xl desktop:rounded-r-none desktop:mb-0 desktop:text-left"
+          desktop:rounded-l-xl desktop:rounded-r-none sm:mb-0 desktop:text-left"
         >
           <h2 className="text-peach mb-6 text-4xl ">The real deal</h2>
 

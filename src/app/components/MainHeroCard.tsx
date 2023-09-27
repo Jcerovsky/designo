@@ -4,8 +4,7 @@ function MainHeroCard() {
   return (
     <section
       className="bg-peach text-white text-center overflow-hidden bg-no-repeat custom-img-bg-main md:m-6 md:rounded-xl
-      sm:rounded-xl
-      "
+      sm:rounded-xl sm:mx-5"
       style={{
         backgroundImage:
           "url(/assets/home/desktop/bg-pattern-hero-home.svg), url(/assets/home/desktop/image-hero-phone.png)",
