@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import Menu from "@/app/components/Menu";
+import { useRouter } from "next/navigation";
 
 function Header() {
   const [isSmallerScreen, setIsSmallerScreen] = useState<boolean | undefined>(
@@ -9,6 +10,7 @@ function Header() {
   );
 
   const [isMenuShown, setIsMenuShown] = useState<boolean>(false);
+  const router = useRouter();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -29,6 +31,7 @@ function Header() {
           src="/assets/shared/desktop/logo-dark.png"
           alt="designo-logo"
           className="w-[12.625rem] cursor-pointer"
+          onClick={() => router.push("/")}
         />
         <img
           src={`/assets/shared/mobile/icon-${
