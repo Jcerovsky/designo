@@ -4,12 +4,15 @@ function Menu({ style }: { style?: string }) {
   return (
     <ul className={`transition-transform duration-300 ${style}`}>
       <li className="cursor-pointer hover:underline hover:scale-95">
-        OUR COMPANY
+        <a href="/about">OUR COMPANY</a>
       </li>
       <li className="cursor-pointer hover:underline hover:scale-95">
-        LOCATIONS
+        <a href="/locations">LOCATIONS</a>
       </li>
-      <li className="cursor-pointer hover:underline hover:scale-95">CONTACT</li>
+      <li className="cursor-pointer hover:underline hover:scale-95">
+        {" "}
+        <a href="/contact">CONTACT</a>
+      </li>
     </ul>
   );
 }
