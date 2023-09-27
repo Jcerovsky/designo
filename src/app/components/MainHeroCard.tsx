@@ -4,6 +4,7 @@ function MainHeroCard() {
   return (
     <section
       className="bg-peach text-white text-center overflow-hidden bg-no-repeat custom-img-bg-main md:m-6 md:rounded-xl
+      sm:rounded-xl
       "
       style={{
         backgroundImage:

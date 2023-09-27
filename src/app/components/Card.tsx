@@ -14,7 +14,7 @@ function Card({ imgSource, heading, customStyle }: IProps) {
 
   return (
     <div
-      className={`text-white rounded-xl py-[5.265rem] px-[1rem] text-center opacity-50 cursor-pointer
+      className={`text-white rounded-xl py-[5.265rem] mx-5 text-center opacity-50 cursor-pointer
         hover:opacity-100 ${customStyle} flex flex-col justify-center items-center`}
       style={style}
     >

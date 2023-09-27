@@ -4,9 +4,9 @@ import Features from "@/app/components/Features";
 
 export default function Home() {
   return (
-    <div className="px-6 ">
+    <div className="sm:px-6 ">
       <MainHeroCard />
-      <section className="m-5 mb-[7rem] mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8  ">
+      <section className=" mb-[7rem] mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8  ">
         <Card
           imgSource={"/image-web-design.jpg"}
           heading={"WEB DESIGN"}
@@ -18,7 +18,7 @@ export default function Home() {
           heading={"GRAPHIC DESIGN"}
         />
       </section>
-      <section className="flex flex-col gap-[5rem] m-5 desktop:flex-row desktop:items-center pb-[20rem]">
+      <section className="flex flex-col gap-[5rem] desktop:flex-row desktop:items-center pb-[20rem]">
         <Features
           imgSource={"passionate"}
           heading={"PASSIONATE"}
