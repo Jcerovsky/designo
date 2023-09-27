@@ -5,6 +5,7 @@ import React from "react";
 import ContextProvider from "@/app/context/Context";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
+import FooterAttribute from "@/app/components/FooterAttribute";
 
 const jost = Jost({ weight: ["200", "500", "700", "900"], subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <FooterAttribute />
         </body>
       </ContextProvider>
     </html>

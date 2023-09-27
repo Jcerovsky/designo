@@ -1,10 +1,11 @@
 "use client";
 
 import React from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 function Footer() {
   const path = usePathname();
+  const router = useRouter();
   const isContactPage = path.endsWith("/contact");
 
   return (
@@ -18,6 +19,7 @@ function Footer() {
           src="/assets/shared/desktop/logo-light.png"
           alt="designo-logo"
           className="w-[12.625rem] cursor-pointer ml-auto mr-auto desktop:ml-0 mb-5 mt-10 sm:mt-5 desktop:mb-0"
+          onClick={() => router.push("/")}
         />
         <div
           className="text-white flex flex-col desktop:flex-row desktop:self-center  gap-10
@@ -54,7 +56,7 @@ function Footer() {
           <div className="text-gray-500 flex flex-col font-bold">
             <span>Contact Us (Central Office)</span>
             <span>P : +1 253-863-8967</span>
-            <span>M : jcerovsky8@gmail.com</span>
+            <span>M : contact@designo.co</span>
           </div>
         </div>
         <div className="flex gap-2 justify-center gap-4 desktop:ml-auto desktop:self-end">
