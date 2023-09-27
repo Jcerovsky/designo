@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useContext, useEffect, useState } from "react";
-import { Context } from "@/app/context/Context";
+import React, { useEffect, useState } from "react";
 import Menu from "@/app/components/Menu";
 
 function Header() {
@@ -10,7 +9,6 @@ function Header() {
   );
 
   const [isMenuShown, setIsMenuShown] = useState<boolean>(false);
-  const { theme } = useContext(Context)!;
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -28,9 +26,7 @@ function Header() {
     <header className="px-6 ">
       <div className="flex items-center px-6 py-12">
         <img
-          src={`/assets/shared/desktop/logo-${
-            theme === "light" ? "dark" : "light"
-          }.png`}
+          src="/assets/shared/desktop/logo-dark.png"
           alt="designo-logo"
           className="w-[12.625rem] cursor-pointer"
         />

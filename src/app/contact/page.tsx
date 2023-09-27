@@ -4,6 +4,7 @@ import React from "react";
 import Location from "@/app/components/Location";
 import { useObjectState } from "@/app/hooks/useObjectState";
 import FormInput from "@/app/components/FormInput";
+import FormSuccess from "@/app/components/FormSuccess";
 
 interface IFormProps {
   name: string;
@@ -11,6 +12,7 @@ interface IFormProps {
   phone: string;
   message: string;
   formSubmitted: boolean;
+  formValid: boolean;
 }
 
 function Page() {
@@ -20,12 +22,30 @@ function Page() {
     phone: "",
     message: "",
     formSubmitted: false,
+    formValid: false,
   });
+
+  const validateForm = (formData: IFormProps) => {
+    const pattern = new RegExp(
+      "^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$",
+    );
+    const emailMatch = pattern.test(formData.email);
+    if (formData.name && emailMatch && formData.phone && formData.message) {
+      return true;
+    } else {
+      return false;
+    }
+  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormData({ formSubmitted: true });
+    if (validateForm(formData)) setFormData({ formValid: true });
   };
+
+  if (formData.formValid) {
+    return <FormSuccess />;
+  }
 
   return (
     <div className="sm:mx-5  text-white ">
@@ -61,7 +81,7 @@ function Page() {
           />
 
           <FormInput
-            type={"email"}
+            type={"text"}
             setFormData={setFormData}
             value={formData.email}
             name={"email"}
@@ -80,7 +100,7 @@ function Page() {
             type={"text"}
             setFormData={setFormData}
             value={formData.message}
-            name={"your-message"}
+            name={"message"}
             placeholder={"Your Message"}
             textArea={true}
             formSubmitted={formData.formSubmitted}

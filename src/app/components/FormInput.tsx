@@ -21,6 +21,13 @@ function FormInput({
 }: IFormInputProps) {
   const isEmpty = (value: string) => value.trim() === "";
 
+  const invalidEmailMsg = formSubmitted &&
+    name === "email" &&
+    value.length > 0 &&
+    !value.includes("@") && (
+      <p className="ml-4 italic text-left">Please use a valid email address</p>
+    );
+
   return (
     <div className="flex flex-col ">
       <div className="flex items-center border-b border-white ">
@@ -42,16 +49,18 @@ function FormInput({
             className="bg-transparent  px-4 pb-2 focus:outline-black placeholder-gray-300 w-full"
           />
         )}
-
-        <img
-          src="/assets/contact/desktop/icon-error.svg"
-          alt="error-img"
-          className={`ml-auto pb-2`}
-        />
+        {formSubmitted && isEmpty(value) && (
+          <img
+            src="/assets/contact/desktop/icon-error.svg"
+            alt="error-img"
+            className={`ml-auto pb-2`}
+          />
+        )}
       </div>
       {formSubmitted && isEmpty(value) && (
-        <p className={`ml-4 italic text-left`}>{"Can't be empty"}</p>
+        <p className="ml-4 italic text-left">{"Can't be empty"}</p>
       )}
+      {invalidEmailMsg}
     </div>
   );
 }

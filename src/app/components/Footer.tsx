@@ -1,14 +1,12 @@
 "use client";
 
-import React, { useContext } from "react";
-import { Context } from "@/app/context/Context";
+import React from "react";
 import { usePathname } from "next/navigation";
 
 function Footer() {
   const path = usePathname();
   const isContactPage = path.endsWith("/contact");
 
-  const { theme } = useContext(Context)!;
   return (
     <footer
       className={`text-center relative bg-neutral-900 ${
@@ -17,9 +15,7 @@ function Footer() {
     >
       <div className="desktop:flex items-center desktop:border-b border-gray-800 desktop:mx-5 desktop:pb-8">
         <img
-          src={`/assets/shared/desktop/logo-${
-            theme === "light" ? "light" : "dark"
-          }.png`}
+          src="/assets/shared/desktop/logo-light.png"
           alt="designo-logo"
           className="w-[12.625rem] cursor-pointer ml-auto mr-auto desktop:ml-0 mb-5 mt-10 sm:mt-5 desktop:mb-0"
         />
