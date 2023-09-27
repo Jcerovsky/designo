@@ -13,12 +13,11 @@ function Footer() {
             theme === "light" ? "light" : "dark"
           }.png`}
           alt="designo-logo"
-          className="w-[12.625rem] cursor-pointer ml-auto mr-auto border-b border-gray-500 desktop:border-none
-          desktop:ml-0"
+          className="w-[12.625rem] cursor-pointer ml-auto mr-auto desktop:ml-0 mb-5 mt-10 sm:mt-5 desktop:mb-0"
         />
         <div
           className="text-white flex flex-col desktop:flex-row desktop:self-center  gap-10
-        tracking-widest mb-10 desktop:mb-0"
+        tracking-widest mb-10 desktop:mb-0 border-t border-gray-800 mx-5 pt-5 desktop:border-none desktop:mx-0"
         >
           <a
             href="/about"
@@ -83,7 +82,7 @@ function Footer() {
         </div>
         <div
           className="m-5 absolute text-white bg-peach py-[3.65rem] px-[2.625rem] rounded-xl top-[-18%] desktop:flex justify-between
-        items-center gap-[10rem] desktop:p-[4rem]"
+        items-center gap-[10rem] desktop:p-[4rem] min-w-[18.56rem] max-h-[25rem]"
           style={{
             backgroundImage:
               'url("/assets/shared/desktop/bg-pattern-call-to-action.svg")',
@@ -101,7 +100,7 @@ function Footer() {
           <a
             href="/contact"
             className="inline-block py-4 px-6 bg-white rounded-xl text-black tracking-widest hover:bg-light-peach
-          hover:text-white  duration-200 cursor-pointer whitespace-nowrap	"
+          hover:text-white  duration-200 cursor-pointer desktop:whitespace-nowrap	"
           >
             GET IN TOUCH
           </a>
