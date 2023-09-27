@@ -2,13 +2,41 @@
 
 import React from "react";
 import Location from "@/app/components/Location";
+import { useObjectState } from "@/app/hooks/useObjectState";
+import FormInput from "@/app/components/FormInput";
+
+interface IFormProps {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+  formSubmitted: boolean;
+}
 
 function Page() {
+  const [formData, setFormData] = useObjectState<IFormProps>({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+    formSubmitted: false,
+  });
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setFormData({ formSubmitted: true });
+  };
+
   return (
     <div className="sm:mx-5  text-white ">
       <div
         className="bg-peach py-[3.125rem] px-[2.85rem] text-center  sm:rounded-xl mb-[7rem] sm:text-left desktop:flex
        desktop:gap-4 items-center"
+        style={{
+          backgroundImage:
+            'url("assets/home/desktop/bg-pattern-hero-home.svg")',
+          backgroundSize: "cover",
+        }}
       >
         <div className="desktop:flex desktop:flex-col desktop:justify-center">
           <h1 className="text-4xl mb-8">Contact us</h1>
@@ -19,30 +47,45 @@ function Page() {
             users, drop us a line.
           </p>
         </div>
-        <form className="flex flex-col gap-5 basis-1/2	">
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            className="bg-transparent border-b border-white px-4 pb-2 focus:outline-black placeholder-gray-300"
+        <form
+          className="flex flex-col gap-5 basis-1/2	"
+          onSubmit={(e) => handleSubmit(e)}
+        >
+          <FormInput
+            type={"text"}
+            setFormData={setFormData}
+            value={formData.name}
+            name={"name"}
+            placeholder={"Name"}
+            formSubmitted={formData.formSubmitted}
           />
-          <input
-            type="text"
-            name="email"
-            placeholder="Email"
-            className="bg-transparent border-b border-white px-4 pb-2 focus:outline-black placeholder-gray-300"
+
+          <FormInput
+            type={"email"}
+            setFormData={setFormData}
+            value={formData.email}
+            name={"email"}
+            placeholder={"Email"}
+            formSubmitted={formData.formSubmitted}
           />
-          <input
-            type="text"
-            name="phone"
-            placeholder="Phone"
-            className="bg-transparent border-b border-white px-4 pb-2 focus:outline-black placeholder-gray-300"
+          <FormInput
+            type={"text"}
+            setFormData={setFormData}
+            value={formData.phone}
+            name={"phone"}
+            placeholder={"Phone"}
+            formSubmitted={formData.formSubmitted}
           />
-          <textarea
-            name="your-message"
-            placeholder="Your Message"
-            className="bg-transparent border-b border-white px-4 pb-2 focus:outline-black placeholder-gray-300 resize-none h-[6rem]"
+          <FormInput
+            type={"text"}
+            setFormData={setFormData}
+            value={formData.message}
+            name={"your-message"}
+            placeholder={"Your Message"}
+            textArea={true}
+            formSubmitted={formData.formSubmitted}
           />
+
           <button className="bg-white rounded-xl px-6 py-4 ml-auto mr-auto text-black sm:mr-0">
             SUBMIT
           </button>
