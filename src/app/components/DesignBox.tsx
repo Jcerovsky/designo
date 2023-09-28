@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 
-function DesignContainer({
+function DesignBox({
   children,
   style,
 }: {
@@ -22,4 +22,4 @@ function DesignContainer({
   );
 }
 
-export default DesignContainer;
+export default DesignBox;

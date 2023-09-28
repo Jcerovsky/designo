@@ -1,16 +1,16 @@
 import React from "react";
 
 interface IProps {
-  imgName: string;
+  imgSource: string;
   heading: string;
   text: string;
 }
 
-function WebDesignContainer({ imgName, heading, text }: IProps) {
+function DesignPageContainer({ imgSource, heading, text }: IProps) {
   return (
     <div className="mb-6 grid grid-cols-[repeat(auto-fit,minmax(min(21.875rem,100%),1fr))] ">
       <img
-        src={`/assets/web-design/desktop/image-${imgName}.jpg`}
+        src={`/assets/${imgSource}`}
         alt="shipping-img"
         className="rounded-t-xl sm:rounded-r-none sm:rounded-l-xl md:rounded-b-none md:rounded-t-xl h-full "
       />
@@ -28,4 +28,4 @@ function WebDesignContainer({ imgName, heading, text }: IProps) {
   );
 }
 
-export default WebDesignContainer;
+export default DesignPageContainer;
