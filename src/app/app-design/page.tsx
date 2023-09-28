@@ -45,10 +45,15 @@ function Page() {
         text={"A VR experience app made for Loopstudios"}
       />
       <section className="mt-[5rem] mb-[4rem] mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8  ">
-        <Card imgSource={"/image-web-design.jpg"} heading={"WEB DESIGN"} />
+        <Card
+          imgSource={"/image-web-design.jpg"}
+          heading={"WEB DESIGN"}
+          linkTo={"/web-design"}
+        />
         <Card
           imgSource={"/image-graphic-design.jpg"}
           heading={"GRAPHIC DESIGN"}
+          linkTo={"/graphic-design"}
         />
       </section>
     </div>

@@ -13,7 +13,7 @@ function Page() {
           memorable brand experiences.
         </p>
       </DesignBox>
-      <div className=" max-w-[72.375rem] md:gap-8 mx-5 md:grid md:grid-cols-[repeat(auto-fit,minmax(min(21.875rem,100%),1fr))]">
+      <div className=" max-w-[72.375rem] gap-[1.875rem] mx-5 grid grid-cols-[repeat(auto-fit,minmax(min(21.875rem,100%),1fr))]">
         <DesignPageContainer
           imgSource={"web-design/desktop/image-express.jpg"}
           heading={"EXPRESS"}
@@ -57,10 +57,15 @@ function Page() {
       </div>
 
       <section className="mt-[5rem] mb-[4rem] mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8  ">
-        <Card imgSource={"/image-app-design.jpg"} heading={"APP DESIGN"} />
+        <Card
+          imgSource={"/image-app-design.jpg"}
+          heading={"APP DESIGN"}
+          linkTo={"/app-design"}
+        />
         <Card
           imgSource={"/image-graphic-design.jpg"}
           heading={"GRAPHIC DESIGN"}
+          linkTo={"/graphic-design"}
         />
       </section>
     </div>

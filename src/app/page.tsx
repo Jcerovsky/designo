@@ -11,11 +11,17 @@ export default function Home() {
           imgSource={"/image-web-design.jpg"}
           heading={"WEB DESIGN"}
           customStyle={"row-span-2"}
+          linkTo={"/web-design"}
         />
-        <Card imgSource={"/image-app-design.jpg"} heading={"APP DESIGN"} />
+        <Card
+          imgSource={"/image-app-design.jpg"}
+          heading={"APP DESIGN"}
+          linkTo={"/app-design"}
+        />
         <Card
           imgSource={"/image-graphic-design.jpg"}
           heading={"GRAPHIC DESIGN"}
+          linkTo={"/graphic-design"}
         />
       </section>
       <section className="flex flex-col gap-[5rem] desktop:flex-row desktop:items-center pb-[20rem]">
