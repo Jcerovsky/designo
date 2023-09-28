@@ -51,14 +51,14 @@ function Page() {
     <div className="sm:mx-5  text-white ">
       <div
         className="bg-peach py-[3.125rem] px-[2.85rem] text-center  sm:rounded-xl mb-[7rem] sm:text-left desktop:flex
-       desktop:gap-4 items-center"
+       desktop:gap-4 items-center md:"
         style={{
           backgroundImage:
-            'url("assets/home/desktop/bg-pattern-hero-home.svg")',
+            'url("assets/shared/desktop/bg-pattern-call-to-action.svg")',
           backgroundSize: "cover",
         }}
       >
-        <div className="desktop:flex desktop:flex-col desktop:justify-center">
+        <div className="desktop:flex desktop:flex-col desktop:justify-center ">
           <h1 className="text-4xl mb-8">Contact us</h1>
           <p className="mx-[2.5rem] mb-10 sm:ml-0 max-w-[27.8125rem]">
             Ready to take it to the next level? Let’s talk about your project or
