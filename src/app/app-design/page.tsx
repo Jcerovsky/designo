@@ -5,7 +5,7 @@ import Card from "@/app/components/Card";
 
 function Page() {
   return (
-    <div>
+    <div className="pb-[10rem]">
       <DesignBox style="sm:mx-5 mb-[5rem]">
         <h1 className="mb-6 text-4xl">App Design</h1>
         <p className="mx-[4.25rem] desktop:ml-0">
@@ -13,7 +13,7 @@ function Page() {
           right at their fingertips.
         </p>
       </DesignBox>
-      <div className="max-w-[72.375rem] gap-[1.875rem] mx-5 grid grid-cols-[repeat(auto-fit,minmax(min(21.875rem,100%),1fr))]">
+      <div className=" max-w-[72.375rem] gap-[1.875rem] mx-5 grid grid-cols-[repeat(auto-fit,minmax(min(21.875rem,100%),1fr))]">
         <DesignPageContainer
           heading={"AIRFILTER"}
           imgSource={"app-design/desktop/image-airfilter.jpg"}
@@ -46,7 +46,7 @@ function Page() {
           text={"A VR experience app made for Loopstudios"}
         />
       </div>
-      <section className="mt-[5rem] mb-[4rem] mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8  ">
+      <section className=" mb-[2rem] mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8  ">
         <Card
           imgSource={"/image-web-design.jpg"}
           heading={"WEB DESIGN"}

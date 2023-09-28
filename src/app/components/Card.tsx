@@ -16,7 +16,7 @@ function Card({ imgSource, heading, customStyle, linkTo }: IProps) {
   return (
     <a
       href={linkTo}
-      className={`text-white rounded-xl py-[5.265rem] mx-5 text-center opacity-50 cursor-pointer
+      className={`text-white rounded-xl py-[5.265rem] mx-5 text-center cursor-pointer
         hover:opacity-100 ${customStyle} flex flex-col justify-center items-center`}
       style={style}
     >

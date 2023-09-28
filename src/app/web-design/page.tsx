@@ -56,7 +56,7 @@ function Page() {
         />
       </div>
 
-      <section className="mt-[5rem] mb-[4rem] mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8  ">
+      <section className="mb-[2rem] mt-[7rem] flex flex-col gap-5 lap desktop:grid grid-cols-2 desktop:gap-8  ">
         <Card
           imgSource={"/image-app-design.jpg"}
           heading={"APP DESIGN"}
