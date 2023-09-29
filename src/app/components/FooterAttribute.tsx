@@ -2,9 +2,9 @@ import React from "react";
 
 function FooterAttribute() {
   return (
-    <div className="bg-zinc-50 py-[1.5rem] flex flex-col items-center justify-center">
+    <div className="text-zinc-50 bg-gradient-to-r from-[#D3CCE3] to-[#0F2027] py-[1.5rem] flex flex-col items-center justify-center">
       <h3 className="tracking-widest">Coded by Jakub Cerovsky</h3>
-      <div>
+      <div className="text-center">
         <span>Do you like what you see? </span>
         <span>{"I'm open to collaboration."}</span>
         <div>

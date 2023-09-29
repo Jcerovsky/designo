@@ -1,28 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import Location from "@/app/components/Location";
+import { Context } from "@/app/context/Context";
 
 function Page() {
-  const [screenSize, setScreenSize] = useState<string>("mobile");
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const handleResize = () => {
-        const screen =
-          window.innerWidth < 680
-            ? "mobile"
-            : window.innerWidth < 950
-            ? "tablet"
-            : "desktop";
-        if (screen !== screenSize) {
-          setScreenSize(screen);
-        }
-      };
-      window.addEventListener("resize", handleResize);
-
-      return () => window.removeEventListener("resize", handleResize);
-    }
-  }, [screenSize]);
+  const { screenSize } = useContext(Context)!;
 
   return (
     <div className="sm:mx-5 pb-[15rem]">

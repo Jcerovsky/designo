@@ -24,7 +24,8 @@ function MainHeroCard() {
         </p>
         <a
           href="/about"
-          className="bg-white rounded-md text-black py-4 px-6 tracking-widest"
+          className="bg-white rounded-md text-black py-4 px-6 tracking-widest hover:bg-light-peach hover:text-white
+          duration-300"
         >
           LEARN MORE
         </a>

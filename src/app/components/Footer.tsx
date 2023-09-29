@@ -63,27 +63,27 @@ function Footer() {
           <img
             src="/assets/shared/desktop/icon-facebook.svg"
             alt="facebook-logo"
-            className="cursor-pointer hover:opacity-80"
+            className="cursor-pointer hover:opacity-80 duration-300"
           />
           <img
             src="/assets/shared/desktop/icon-youtube.svg"
             alt="youtube-logo"
-            className="cursor-pointer hover:opacity-80"
+            className="cursor-pointer hover:opacity-80 duration-300"
           />
           <img
             src="/assets/shared/desktop/icon-twitter.svg"
             alt="twitter-logo"
-            className="cursor-pointer hover:opacity-80"
+            className="cursor-pointer hover:opacity-80 duration-300"
           />
           <img
             src="/assets/shared/desktop/icon-pinterest.svg"
             alt="pinterest-logo"
-            className="cursor-pointer hover:opacity-80"
+            className="cursor-pointer hover:opacity-80 duration-300"
           />
           <img
             src="/assets/shared/desktop/icon-instagram.svg"
             alt="instagram-logo"
-            className="cursor-pointer hover:opacity-80"
+            className="cursor-pointer hover:opacity-80 duration-300"
           />
         </div>
         {!isContactPage && (
