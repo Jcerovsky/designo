@@ -10,12 +10,12 @@ function DesignPageContainer({ imgSource, heading, text }: IProps) {
   return (
     <div
       className="mb-6 grid grid-cols-[repeat(auto-fit,minmax(min(18.75rem,100%),1fr))] hover:scale-105 duration-300
-    bg-[#fdf4f2] hover:bg-peach rounded-xl text-peach hover:text-white"
+    bg-[#fdf4f2] hover:bg-peach rounded-xl text-peach hover:text-white "
     >
       <img
         src={`/assets/${imgSource}`}
         alt="shipping-img"
-        className="rounded-t-xl min-[640px]:rounded-r-none min-[640px]:rounded-l-xl h-full
+        className="rounded-t-xl min-[640px]:rounded-r-none min-[640px]:rounded-l-xl h-full hover:saturate-200
         min-[747px]:rounded-l-xl min-[747px]:rounded-r-none min-[771px]:rounded-t-xl min-[771px]:rounded-b-none"
       />
       <div
