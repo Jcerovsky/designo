@@ -14,21 +14,33 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Table of contents
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [Overview](#overview)
+  - [Links](#links)
+  - [Built with](#built-with)
+- [Author](#author)
 
-## Learn More
+## Overview
 
-To learn more about Next.js, take a look at the following resources:
+Expected Behaviour:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Contact Form
+  - contact form has basic validation and after completing will show a modal that says message was received, but the form is not connected with backend to send the information.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Links
 
-## Deploy on Vercel
+- Live Site URL: [link](https://designo-git-main-jcerovsky.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Built with    
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js](https://nextjs.org/) - React Framework
+- [React](https://reactjs.org/) - JS library
+- [TypeScript](https://www.typescriptlang.org/) - Superset of JS
+- [TailwindCSS](https://tailwindcss.com/) - CSS Framework
+
+## Author
+
+- LinkedIn - [Jakub Cerovsky](https://www.linkedin.com/in/jakub-cerovsky-288161173/)
+
+
