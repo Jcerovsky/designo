@@ -61,7 +61,7 @@ function Page() {
           className="h-[22rem] w-full desktop:w-[40%] desktop:mr-auto sm:rounded-xl sm:rounded-b-none overflow-hidden
         desktop:rounded-xl"
         >
-          <LeafletMap lat={-27.60643} lng={153.06578} />
+          <LeafletMap lat={53.70949} lng={-1.34261} />
         </div>
         <LocationContainer heading={"United Kingdom"}>
           <div className="sm:flex sm:text-left gap-[5rem] ">
