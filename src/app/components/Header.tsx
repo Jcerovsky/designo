@@ -25,7 +25,7 @@ function Header() {
   }, []);
 
   return (
-    <header className=" ">
+    <header>
       <div className="flex items-center px-6 py-12">
         <img
           src="/assets/shared/desktop/logo-dark.png"
@@ -49,9 +49,8 @@ function Header() {
       </div>
       {isMenuShown && isSmallerScreen && (
         <Menu
-          style={
-            "bg-slate-600 py-12 px-7 text-2xl tracking-widest flex flex-col justify-between gap-5 text-white"
-          }
+          style={`bg-slate-600 py-12 px-7 text-2xl tracking-widest flex flex-col justify-between gap-5 text-white 
+           `}
         />
       )}
     </header>

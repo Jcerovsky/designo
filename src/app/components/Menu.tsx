@@ -2,7 +2,7 @@ import React from "react";
 
 function Menu({ style }: { style?: string }) {
   return (
-    <ul className={`transition-transform duration-300 ${style}`}>
+    <ul className={style}>
       <li className="cursor-pointer hover:underline hover:scale-95">
         <a href="/about">OUR COMPANY</a>
       </li>

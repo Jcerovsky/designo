@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+
+import React, { useContext } from "react";
+import { Context } from "@/app/context/Context";
 
 interface IProps {
   imgSource: string;
@@ -8,8 +11,10 @@ interface IProps {
 }
 
 function Card({ imgSource, heading, customStyle, linkTo }: IProps) {
+  const { screenSize } = useContext(Context)!;
+
   const style = {
-    backgroundImage: `url(/assets/home/mobile/${imgSource})`,
+    backgroundImage: `url(/assets/home/${screenSize}/${imgSource})`,
     backgroundSize: "cover",
   };
 
