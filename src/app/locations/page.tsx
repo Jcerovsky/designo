@@ -14,7 +14,7 @@ function Page() {
     <div className="pb-[15rem] sm:mx-5 ">
       <div className="desktop:flex desktop:flex-row-reverse gap-3 ">
         <div
-          className="h-[22rem] w-full desktop:w-[40%] desktop:ml-auto sm:rounded-xl sm:rounded-b-none overflow-hidden
+          className="h-[22rem] w-full desktop:w-[25rem] desktop:min-w-[40%] desktop:ml-auto sm:rounded-xl sm:rounded-b-none overflow-hidden
         desktop:rounded-xl"
         >
           <LeafletMap lat={43.782688} lng={-80.132317} />
@@ -36,7 +36,7 @@ function Page() {
       </div>
       <div className="desktop:flex gap-3 mt-[5rem]  ">
         <div
-          className="h-[22rem] w-full desktop:w-[40%] desktop:mr-auto sm:rounded-xl sm:rounded-b-none overflow-hidden
+          className="h-[22rem] w-full desktop:w-[25rem] desktop:min-w-[40%] desktop:mr-auto sm:rounded-xl sm:rounded-b-none overflow-hidden
         desktop:rounded-xl"
         >
           <LeafletMap lat={-27.60643} lng={153.06578} />
@@ -58,7 +58,7 @@ function Page() {
       </div>
       <div className="desktop:flex desktop:flex-row-reverse gap-3 mt-[5rem]  ">
         <div
-          className="h-[22rem] w-full desktop:w-[40%] desktop:mr-auto sm:rounded-xl sm:rounded-b-none overflow-hidden
+          className="h-[22rem] w-full desktop:w-[25rem] desktop:min-w-[40%] desktop:ml-auto sm:rounded-xl sm:rounded-b-none overflow-hidden
         desktop:rounded-xl"
         >
           <LeafletMap lat={53.70949} lng={-1.34261} />
